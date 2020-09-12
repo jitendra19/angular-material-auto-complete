@@ -10,8 +10,8 @@
 
 	<br>
 	<mat-form-field class="example-full-width">
-		<input type="text" placeholder="Pick name" aria-label="Number" matInput [formControl]="namesControl" [matAutocomplete]="auto">
-		<mat-autocomplete #auto="matAutocomplete">
+		<input type="text" placeholder="Pick name" aria-label="Number" matInput [formControl]="namesControl" [matAutocomplete]="auto1">
+		<mat-autocomplete #auto1="matAutocomplete">
 			<mat-option *ngFor="let option of filteredNames | async" [value]="option">
 				{{option}}
 			</mat-option>
